@@ -1,0 +1,19 @@
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+.headerLayout {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 2% 0;
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.titleHeader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: #CE4265;
+}
