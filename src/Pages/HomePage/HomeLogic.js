@@ -19,12 +19,10 @@ export default function HomeLogic() {
   });
 
   const nextPage = (url) => {
-    console.log(url);
     dispatch(paginationDataPokemon(url))
   };
 
   const previousPage = (url) => {
-    console.log(url);
     dispatch(paginationDataPokemon(url))
   };
 

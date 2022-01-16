@@ -8,7 +8,6 @@ import "./CollectionPage.css";
 
 function CollectionPage(props) {
 
-    console.log(props.dataMyPokemon)
 
   return (
     <>

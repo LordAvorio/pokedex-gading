@@ -10,7 +10,6 @@ function CollectionLogic() {
     const releasePokemon = (nick) => {
         let tempData = dataMyPokemon
         for(let x = 0; x < tempData.length; x++){
-            console.log(tempData[x].NickPokemon)
             if(nick === tempData[x].NickPokemon){
                 tempData.splice(x, 1)
                 setDataMyPokemon(tempData)

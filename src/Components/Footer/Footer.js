@@ -15,7 +15,6 @@ function Footer() {
   const navigate = useNavigate();
 
   const redirectPage = (val) => {
-    console.log(val)
     if (val === "homeLink") {
       navigate("/");
     } else if (val === "myPokemonLink") {

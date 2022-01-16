@@ -11,16 +11,12 @@ function DetailLogic() {
   const [pokemonNick, setPokemonNick] = useState("");
 
   const location = useLocation();
-  console.log(location.state.dataPokemon);
 
   const catchingPokemon = () => {
     let randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-    console.log(randomNumber);
     if (randomNumber > 50) {
-      console.log("Success");
       setOpenModalInput(true);
     } else {
-      console.log("Failed");
       setOpenModalFailed(true);
     }
   };
@@ -40,7 +36,6 @@ function DetailLogic() {
     let arrayPokemon = []  
     let storePokemon = {}
     let checkSame = false
-    console.log(checkCookie)
 
     for(let x = 0; x < checkCookie.length; x++){
       if(checkCookie[x].TypePokemon === location.state.dataPokemon.name && checkCookie[x].NickPokemon === pokemonNick){
@@ -64,7 +59,6 @@ function DetailLogic() {
       }else{
           bake_cookie("store_pokemon", arrayPokemon)       
       }
-      console.log(read_cookie('store_pokemon'))
     }
 
 
