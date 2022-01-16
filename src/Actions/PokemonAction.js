@@ -21,6 +21,14 @@ export const getDataPokemon = () => {
       for (let x = 0; x < pokemonData.length; x++) {
         let responseDetail = await Axios.get(pokemonData[x].url);
         pokemonData[x]["detailpokemon"] = responseDetail.data;
+
+        //GET MOVES DATA
+        let moveDetail = responseDetail.data.moves
+        for(let y = 0; y < moveDetail.length; y++){
+          let responseMove = await Axios.get(moveDetail[y].move.url);
+          pokemonData[x].detailpokemon.moves[y]["elementmove"] = responseMove.data.type.name
+        }
+
       }
 
       dispatch({
@@ -59,6 +67,14 @@ export const paginationDataPokemon = (url) => {
       for (let x = 0; x < pokemonData.length; x++) {
         let responseDetail = await Axios.get(pokemonData[x].url);
         pokemonData[x]["detailpokemon"] = responseDetail.data;
+
+        //GET MOVES DATA
+        let moveDetail = responseDetail.data.moves
+        for(let y = 0; y < moveDetail.length; y++){
+          let responseMove = await Axios.get(moveDetail[y].move.url);
+          pokemonData[x].detailpokemon.moves[y]["elementmove"] = responseMove.data.type.name
+        }
+
       }
 
       dispatch({

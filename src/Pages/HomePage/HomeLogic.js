@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 
 import HomePage from "./HomePage";
 
@@ -7,6 +9,7 @@ import { getDataPokemon, paginationDataPokemon } from "../../Actions/PokemonActi
 
 export default function HomeLogic() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { dataPokemon, generalDataPokemon } = useSelector((state) => {
     return {
@@ -26,8 +29,7 @@ export default function HomeLogic() {
   };
 
   const detailPokemonPage = (item) => {
-      console.log("Detail Pokemon")
-      console.log(item)
+      navigate('/detail',{state:{dataPokemon: item}});
   }
 
   React.useEffect(() => {

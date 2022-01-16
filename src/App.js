@@ -17,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/mycollection" element={<CollectionPage/>}/>
+        <Route path="/detail" element={<DetailPage/>}/>
       </Routes>
       <Footer/>
     </>
