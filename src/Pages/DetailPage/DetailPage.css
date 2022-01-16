@@ -73,3 +73,17 @@
     font-weight: normal;
     text-transform: uppercase;
 }
+
+.modalLayout{
+    width: 80%;
+    padding: 5%;
+    margin: 0 5%;
+    text-align: center;
+    position: absolute;
+    top: 40vh;
+}
+
+.inputNick{
+    width: 100%;
+    margin: 5% 0 !important;
+}
