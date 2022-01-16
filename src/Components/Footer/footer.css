@@ -1,0 +1,14 @@
+.footerLayout{
+    width: 100%;
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+}
+
+.Mui-selected{
+    color: #CE4265 !important;
+}
+
+.MuiBottomNavigationAction-label{
+    font-family: 'Roboto', sans-serif;
+}

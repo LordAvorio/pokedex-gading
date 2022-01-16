@@ -1,11 +1,15 @@
 import React from 'react'
 
-export default function HomePage() {
+import './CollectionPage.css'
+
+function CollectionPage() {
     return (
         <>
             <div style={{marginTop: "20%"}}>
-                <p>HomePage</p>
+                <p>Collection</p>
             </div>
         </>
     )
 }
+
+export default CollectionPage
